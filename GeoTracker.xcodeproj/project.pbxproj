@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		B75F23921DD3C96700210ED7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F23911DD3C96700210ED7 /* AppDelegate.swift */; };
-		B75F23941DD3C96700210ED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F23931DD3C96700210ED7 /* ViewController.swift */; };
 		B75F23971DD3C96800210ED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75F23951DD3C96800210ED7 /* Main.storyboard */; };
 		B75F23991DD3C96800210ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75F23981DD3C96800210ED7 /* Assets.xcassets */; };
 		B75F239C1DD3C96800210ED7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75F239A1DD3C96800210ED7 /* LaunchScreen.storyboard */; };
 		B75F23A71DD3C96800210ED7 /* GeoTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F23A61DD3C96800210ED7 /* GeoTrackerTests.swift */; };
 		B75F23B21DD3C96800210ED7 /* GeoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F23B11DD3C96800210ED7 /* GeoTrackerUITests.swift */; };
+		B75F23C01DD3CB4000210ED7 /* TrackData.csv in Resources */ = {isa = PBXBuildFile; fileRef = B75F23BF1DD3CB4000210ED7 /* TrackData.csv */; };
+		B75F23C31DD3CCFD00210ED7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75F23C21DD3CCFD00210ED7 /* MapKit.framework */; };
+		B75F23C51DD3CD0D00210ED7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75F23C41DD3CD0D00210ED7 /* CoreLocation.framework */; };
+		B75F23C91DD3D45B00210ED7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F23C81DD3D45B00210ED7 /* ViewController.swift */; };
+		B75F23CB1DD3D58E00210ED7 /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F23CA1DD3D58E00210ED7 /* MapAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		B75F238E1DD3C96700210ED7 /* GeoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75F23911DD3C96700210ED7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B75F23931DD3C96700210ED7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B75F23961DD3C96800210ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B75F23981DD3C96800210ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B75F239B1DD3C96800210ED7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		B75F23AD1DD3C96800210ED7 /* GeoTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75F23B11DD3C96800210ED7 /* GeoTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoTrackerUITests.swift; sourceTree = "<group>"; };
 		B75F23B31DD3C96800210ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B75F23BF1DD3CB4000210ED7 /* TrackData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrackData.csv; sourceTree = "<group>"; };
+		B75F23C21DD3CCFD00210ED7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B75F23C41DD3CD0D00210ED7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B75F23C81DD3D45B00210ED7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B75F23CA1DD3D58E00210ED7 /* MapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75F23C51DD3CD0D00210ED7 /* CoreLocation.framework in Frameworks */,
+				B75F23C31DD3CCFD00210ED7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 				B75F23A51DD3C96800210ED7 /* GeoTrackerTests */,
 				B75F23B01DD3C96800210ED7 /* GeoTrackerUITests */,
 				B75F238F1DD3C96700210ED7 /* Products */,
+				B75F23C11DD3CCFD00210ED7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				B75F23911DD3C96700210ED7 /* AppDelegate.swift */,
-				B75F23931DD3C96700210ED7 /* ViewController.swift */,
+				B75F23C81DD3D45B00210ED7 /* ViewController.swift */,
+				B75F23CA1DD3D58E00210ED7 /* MapAnnotation.swift */,
+				B75F23BF1DD3CB4000210ED7 /* TrackData.csv */,
 				B75F23951DD3C96800210ED7 /* Main.storyboard */,
 				B75F23981DD3C96800210ED7 /* Assets.xcassets */,
 				B75F239A1DD3C96800210ED7 /* LaunchScreen.storyboard */,
@@ -123,6 +136,15 @@
 				B75F23B31DD3C96800210ED7 /* Info.plist */,
 			);
 			path = GeoTrackerUITests;
+			sourceTree = "<group>";
+		};
+		B75F23C11DD3CCFD00210ED7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B75F23C41DD3CD0D00210ED7 /* CoreLocation.framework */,
+				B75F23C21DD3CCFD00210ED7 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +259,7 @@
 			files = (
 				B75F239C1DD3C96800210ED7 /* LaunchScreen.storyboard in Resources */,
 				B75F23991DD3C96800210ED7 /* Assets.xcassets in Resources */,
+				B75F23C01DD3CB4000210ED7 /* TrackData.csv in Resources */,
 				B75F23971DD3C96800210ED7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75F23941DD3C96700210ED7 /* ViewController.swift in Sources */,
+				B75F23C91DD3D45B00210ED7 /* ViewController.swift in Sources */,
 				B75F23921DD3C96700210ED7 /* AppDelegate.swift in Sources */,
+				B75F23CB1DD3D58E00210ED7 /* MapAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U3465V32BF;
 				INFOPLIST_FILE = GeoTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jesusfabian.GeoTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,6 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U3465V32BF;
 				INFOPLIST_FILE = GeoTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jesusfabian.GeoTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
